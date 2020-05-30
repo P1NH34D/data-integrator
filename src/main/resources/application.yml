@@ -1,0 +1,43 @@
+server:
+  port: 9101
+
+# Spring context settings
+spring:
+  datasource:
+    integrator:
+      url: jdbc:mysql://localhost:3306/integrator?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      username: root
+      password: admin
+    sepomex:
+      url: jdbc:mysql://localhost:3306/sepomex?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      username: root
+      password: admin
+  jpa:
+    show-sql: false
+    properties:
+      properties:
+        format_sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+# The Camel context
+camel:
+  springboot:
+    name: data-integrator
+  batch:
+    max:
+      records: 1000
+    timeout: 100
+
+# Config source
+config:
+  file:
+    ruta-base: ${user.home}/data-integrator/
+    path:
+      in: ${config.file.ruta-base}/input-files/
+      out: ${config.file.ruta-base}/output-files/
+    routes:
+      sepomex-in: file://${config.file.path.in}/sepomex?fileName=CPdescarga.xls
+      sepomex-out: file://${config.file.path.out}/sepomex?fileName=$simple{in.header.filename}
+
