@@ -4,7 +4,7 @@ import com.alchemistscode.integrator.config.RoutesProperties;
 import com.alchemistscode.integrator.proccesor.SepomexProccesor;
 import com.alchemistscode.integrator.wrapper.SepomexStatistics;
 import com.alchemistscode.integrator.wrapper.SepomexUploadInfo;
-import com.alchemistscode.sepomex.commons.entity.Settlement;
+import com.alchemistscode.sepomex.entity.Settlement;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,10 +1,10 @@
 package com.alchemistscode.integrator.config;
 
-import com.alchemistscode.sepomex.commons.entity.Municipality;
-import com.alchemistscode.sepomex.commons.entity.Settlement;
-import com.alchemistscode.sepomex.commons.entity.catalog.SettlementType;
-import com.alchemistscode.sepomex.commons.entity.catalog.State;
-import com.alchemistscode.sepomex.commons.entity.catalog.Zone;
+import com.alchemistscode.sepomex.entity.Municipality;
+import com.alchemistscode.sepomex.entity.Settlement;
+import com.alchemistscode.sepomex.entity.catalog.SettlementType;
+import com.alchemistscode.sepomex.entity.catalog.State;
+import com.alchemistscode.sepomex.entity.catalog.Zone;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;

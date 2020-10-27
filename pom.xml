@@ -26,8 +26,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alchemistscode.sepomex.commons</groupId>
-            <artifactId>sepomex-commons</artifactId>
+            <groupId>com.alchemistscode.sepomex</groupId>
+            <artifactId>SepomexCommons</artifactId>
             <version>1.0.0</version>
         </dependency>
 

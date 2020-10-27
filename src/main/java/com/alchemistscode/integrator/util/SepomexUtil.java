@@ -3,7 +3,7 @@ package com.alchemistscode.integrator.util;
 import com.alchemistscode.integrator.repository.MunicipalityRepository;
 import com.alchemistscode.integrator.repository.StateRepository;
 import com.alchemistscode.integrator.wrapper.SepomexUploadInfo;
-import com.alchemistscode.sepomex.commons.entity.Municipality;
+import com.alchemistscode.sepomex.entity.Municipality;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.alchemistscode.integrator.repository;
 
-import com.alchemistscode.sepomex.commons.entity.Settlement;
+import com.alchemistscode.sepomex.entity.Settlement;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

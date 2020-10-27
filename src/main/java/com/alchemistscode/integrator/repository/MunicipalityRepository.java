@@ -1,6 +1,6 @@
 package com.alchemistscode.integrator.repository;
 
-import com.alchemistscode.sepomex.commons.entity.Municipality;
+import com.alchemistscode.sepomex.entity.Municipality;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MunicipalityRepository extends JpaRepository<Municipality, Integer> {

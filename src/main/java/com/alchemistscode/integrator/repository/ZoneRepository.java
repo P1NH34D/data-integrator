@@ -1,6 +1,6 @@
 package com.alchemistscode.integrator.repository;
 
-import com.alchemistscode.sepomex.commons.entity.catalog.Zone;
+import com.alchemistscode.sepomex.entity.catalog.Zone;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ZoneRepository extends JpaRepository<Zone, Integer> {

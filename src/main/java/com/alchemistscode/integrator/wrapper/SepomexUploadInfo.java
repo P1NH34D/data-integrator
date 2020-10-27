@@ -1,6 +1,6 @@
 package com.alchemistscode.integrator.wrapper;
 
-import com.alchemistscode.sepomex.commons.entity.Settlement;
+import com.alchemistscode.sepomex.entity.Settlement;
 import lombok.Builder;
 import lombok.Data;
 
